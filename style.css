@@ -193,8 +193,89 @@ border: none;
 background-color: #2857d1;
     
 color: white;
+cursor: pointer;
+}
+.btn-calcule:hover{
+    background-color: #819bde;
 }
 .simulateur{
     font-weight: 900;
     font-size: 43px;
+}
+.section4{
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    height: 500px;
+}
+.cartes{
+    
+display: flex;
+    
+gap: 18px;
+}
+.carte{
+    
+/* border: 1px solid gray; */
+    
+padding: 20px 131PX 90PX 29PX;
+    
+border-radius: 6px;
+    
+box-shadow: 0PX -1PX 9PX 1PX LIGHTGRAY;
+}
+.livraison-txt {
+
+color: #2b57d9;
+
+font-weight: 900;
+
+font-size: 16px;
+}
+.jours{
+    
+color: #3157e0;
+    
+font-size: 15px;
+    
+font-style: italic;
+}
+.txt-devis{
+
+font-weight: 900;
+
+font-size: 43px;
+}
+.btn-imprimer{
+    
+background-color: white;
+    
+border: 1px solid #2b57d9;
+    
+color: #2b57d9;
+    
+padding: 10PX 54px;
+    
+border-radius: 7px;
+    
+font-weight: 500;
+}
+.prix{
+    
+font-weight: 400;
+    
+FONT-SIZE: 40px;
+}
+.btn-plus{
+    border: none;
+    padding: 10px 35px;
+    border-radius: 7px;
+    color: white;
+    background-color: #feb75f;
+    position: relative;
+    top: 75px;
+    left: 116px;
 }

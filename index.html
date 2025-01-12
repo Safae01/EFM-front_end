@@ -61,12 +61,12 @@
             <div class="simulateur">SIMULATEUR</div>
             <div class="form">
                 <label for="poids">Poids</label>
-                <label for="dimensions">Dimensions</label>
-                <form action="">
+                <label for="longueur">Dimensions</label>
+                <form action="" id="cc">
                     
-                    <input class="input" type="number" name="poids" id="poinds" placeholder="poinds(kg)">
+                    <input class="input" type="number" name="poids" id="poids" placeholder="poids(kg)" required>
                     
-                    <input class="input" type="number" name="dimensions" id="dimensions" placeholder="longueur(cm)">x
+                    <input class="input" type="number" name="longueur" id="longueur" placeholder="longueur(cm)">x
                     <input class="input" type="number" name="largeur" id="largeur" placeholder="Largeur(cm)">x
                     <input class="input" type="number" name="hauteur" id="hauteur" placeholder="Hauteur(cm)">
                     <label for="distance"></label>
@@ -75,9 +75,29 @@
                     </select>
                 </form>
             </div>
-            <button class="btn-calcule"> Calculez maintenant !</button>
-
+            
+            <button class="btn-calcule" id="btn-calcule"> Calculez maintenant !</button>
+            
+        </div>
+        <div class="section4">
+            <div class="txt-devis">VOS DEVIS</div>
+            <div class="cartes">
+                <div class="carte">
+                    <div class="livraison-txt">Livraison Standard</div>
+                    <div class="jours">3-5 jours</div>
+                    <div class="prix" id="result"></div>
+                    <button class="btn-plus"> Voir plus de details</button>
+                </div>
+                <div class="carte">
+                    <div class="livraison-txt">Livraison Express</div>
+                    <div class="jours">1-2 jours</div>
+                    <div class="prix" id="resultE"></div>
+                    <button class="btn-plus"> Voir plus de details</button>
+                </div>
+            </div>
+            <button class="btn-imprimer">Imprimez vos devis</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
