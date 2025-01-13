@@ -73,6 +73,8 @@ body{
 .envoyer{
     font-weight: bold;
     font-size: 35px;
+
+
     width: 71%;
 }
 .une-solution{
@@ -203,13 +205,12 @@ cursor: pointer;
     font-size: 43px;
 }
 .section4{
-    
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 43px;
-    height: 500px;
+    padding: 48PX 0;
 }
 .cartes{
     
@@ -278,4 +279,116 @@ FONT-SIZE: 40px;
     position: relative;
     top: 75px;
     left: 116px;
+}
+.footer{
+    background: linear-gradient(white,#c4d1f2);
+}
+.footer .logo{
+    
+padding: 63px 124px 9px 111px;
+}
+.body-footer{
+
+display: flex;
+
+padding: 10px 70px;
+justify-content: space-around;
+}
+.info{
+    color: #2857d1;
+}
+.links{
+list-style-type: none;
+line-height: 30px;
+}
+.links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.right{
+    padding: 0;
+    margin: 0 0 0px 463px;
+    FONT-SIZE: 14px;
+}
+.social-logos{
+    display: flex;
+    gap: 10PX;
+}
+.social{
+
+}
+.logo-menu{
+
+display: none;
+    
+gap: 4px;
+    
+flex-direction: column;
+}
+.tiret{
+
+
+
+border: 2px solid BLACK;
+width: 25px;
+border-radius: 10px;
+}
+@media  (max-width:768px){
+    .logo-menu{
+        display: flex;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .header{
+        padding: 34px 20px 0px 32px;
+    }
+    .une-solution{
+        width: 71%;
+    }
+    .dropp{
+        height: 258px;
+        width: 345px;;
+    }
+    .btn-obtenez{
+        margin-left: 50%;
+    }
+    .texte{
+        padding: 55px 0 56px 50px;
+    }
+    .liv-rapide{
+        font-size: 27px;
+    }
+    .liv-national{
+        width: 53%;
+    }
+    .four-description{
+        width: 62%;
+        gap: 30px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .section3{
+        padding: 40px 0px 181px 0;
+    }
+    .cartes{
+        flex-direction: column;
+    }
+    .simulateur{
+        font-size: 37px
+    }
+    .txt-devis{
+        font-size: 37px;
+    }
+    .social{
+        margin-left: 39px;
+    }
+    .body-footer{
+        flex-direction: column;
+    }
 }

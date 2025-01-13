@@ -11,7 +11,16 @@ fetch('data.json')
     
     
     const btn = document.querySelector('.btn-calcule');
-
+    const menu= document.querySelector('.logo-menu')
+    const nav = document.querySelector('.menu')
+    menu.addEventListener('click',()=>{
+        
+        if(nav.style.display==='none'){
+            nav.style.display='flex'
+        }else{
+            nav.style.display='none'
+        }
+    })
     btn.addEventListener("click",()=>{
         const section =document.querySelector('.section4')
 
@@ -34,8 +43,10 @@ fetch('data.json')
         const dimensionE =data.tarifs.express.dimension
         
 
-        if(poid === '' || longueur === '' || largeur === "" || hauteur === "" || distanceKey === ""){
-            alert('veuillez remplir tous les champs')
+        if(poid === '' || longueur === '' || largeur === "" || hauteur === "" || distanceKey === "" || 
+            isNaN(poid) || poid <= 0 || isNaN(longueur) || longueur <= 0 || 
+            isNaN(largeur) || largeur <= 0 || isNaN(hauteur) || hauteur <= 0) {
+            alert('veuillez remplir tous les champs avec des nombres supérieurs STRICTEMENT à 0');
         }else{
             // setTimeout(() => {
             //     section.scrollIntoView({
@@ -46,8 +57,8 @@ fetch('data.json')
                 behavior:"smooth"
             })
             section.style.display='flex'
-            result.textContent= baseS+(poid*poidsS)+(longueur*dimensionS)+distanceValueS
-            resultE.textContent= baseE+(poid*poidsE)+(longueur*dimensionE)+distanceValueE
+            result.textContent= baseS+(poid*poidsS)+((longueur+largeur+hauteur)*dimensionS)+distanceValueS
+            resultE.textContent= baseE+(poid*poidsE)+((longueur+largeur+hauteur)*dimensionE)+distanceValueE
         }
     })
 })
